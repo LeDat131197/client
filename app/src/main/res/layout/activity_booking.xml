@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_booking_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_booking_status_bar_height">
+
+        <TextView
+            style="@style/tile_concent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_booking_title" />
+
+        <ImageView
+            android:id="@+id/activity_booking_btn_back"
+            android:layout_width="@dimen/activity_booking_btn_back_height"
+            android:layout_height="@dimen/activity_booking_btn_back_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_booking_btn_back_margin"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_booking_layout_1"
+        android:layout_marginLeft="@dimen/activity_booking_margin"
+        android:layout_marginRight="@dimen/activity_booking_margin"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_detail_coex_back_margin_left"
+            android:layout_marginBottom="@dimen/activity_detail_coex_back_margin_left"
+            android:text="@string/activity_booking_style_room" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_edittext_height"
+            android:background="@drawable/edittext_normal"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/activity_booking_hint_style_room"
+            android:paddingLeft="20dp"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_detail_coex_back_margin_left"
+            android:layout_marginBottom="@dimen/activity_detail_coex_back_margin_left"
+            android:text="@string/activity_booking_number_of_guest" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_edittext_height"
+            android:layout_gravity="end"
+            android:background="@drawable/edittext_normal"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/activity_booking_hint_guest"
+            android:inputType="number"
+            android:paddingRight="20dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_detail_coex_back_margin_left"
+                    android:layout_marginBottom="@dimen/activity_detail_coex_back_margin_left"
+                    android:text="@string/activity_booking_time_of_appointment" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_booking_edittext_height"
+                    android:background="@drawable/edittext_normal"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="@string/activity_booking_hint_time_of_appointment"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_detail_coex_back_margin_left"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_detail_coex_back_margin_left"
+                    android:layout_marginBottom="@dimen/activity_detail_coex_back_margin_left"
+                    android:text="@string/activity_booking_duration" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_booking_edittext_height"
+                    android:layout_gravity="end"
+                    android:background="@drawable/edittext_normal"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="@string/activity_booking_hint_guest"
+                    android:inputType="number"
+                    android:paddingRight="20dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_booking_layout_end"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_booking_layout_end_margin"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_booking_txt_total_amount" />
+
+            <TextView
+                style="@style/detail_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2.000.000 VND" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="@dimen/activity_booking_button_width"
+            android:layout_height="@dimen/activity_booking_button_hieght"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_booking_layout_end_margin"
+            android:background="@drawable/btn_normal_button"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="15sp"
+            android:text="@string/activity_booking_btn_booking" />
+    </RelativeLayout>
+</RelativeLayout>
