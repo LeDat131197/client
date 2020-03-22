@@ -4,28 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookingActivity">
+    tools:context=".activity.BookingActivity">
 
-    <RelativeLayout
+    <androidx.cardview.widget.CardView
         android:id="@+id/activity_booking_layout_1"
         android:layout_width="match_parent"
         android:layout_height="@dimen/activity_booking_status_bar_height">
 
-        <TextView
-            style="@style/tile_concent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/activity_booking_title" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_status_bar_height">
 
-        <ImageView
-            android:id="@+id/activity_booking_btn_back"
-            android:layout_width="@dimen/activity_booking_btn_back_height"
-            android:layout_height="@dimen/activity_booking_btn_back_height"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/activity_booking_btn_back_margin"
-            android:src="@drawable/ic_arrow_back_black_24dp" />
-    </RelativeLayout>
+            <TextView
+                style="@style/title_14_pink_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_booking_title" />
+
+            <ImageView
+                android:id="@+id/activity_booking_btn_back"
+                android:layout_width="@dimen/activity_booking_btn_back_height"
+                android:layout_height="@dimen/activity_booking_btn_back_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_booking_btn_back_margin"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,7 +41,7 @@
         android:orientation="vertical">
 
         <TextView
-            style="@style/detail_title"
+            style="@style/title_13_black_regular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_detail_coex_back_margin_left"
@@ -53,7 +58,7 @@
             android:textSize="14sp" />
 
         <TextView
-            style="@style/detail_title"
+            style="@style/title_13_black_regular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_detail_coex_back_margin_left"
@@ -85,7 +90,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style="@style/detail_title"
+                    style="@style/title_13_black_regular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/activity_detail_coex_back_margin_left"
@@ -112,7 +117,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style="@style/detail_title"
+                    style="@style/title_13_black_regular"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/activity_detail_coex_back_margin_left"
@@ -148,13 +153,13 @@
             android:orientation="vertical">
 
             <TextView
-                style="@style/detail_title"
+                style="@style/title_14_pink_bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/activity_booking_txt_total_amount" />
 
             <TextView
-                style="@style/detail_cost"
+                style="@style/title_12_blue_cost"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -168,9 +173,9 @@
             android:layout_centerVertical="true"
             android:layout_marginRight="@dimen/activity_booking_layout_end_margin"
             android:background="@drawable/btn_normal_button"
-            android:textColor="@color/white"
             android:fontFamily="@font/roboto_bold"
-            android:textSize="15sp"
-            android:text="@string/activity_booking_btn_booking" />
+            android:text="@string/activity_booking_btn_booking"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
     </RelativeLayout>
 </RelativeLayout>

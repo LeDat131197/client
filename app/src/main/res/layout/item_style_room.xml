@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/item_style_room_width"
+    android:layout_height="@dimen/item_style_room_height"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/item_style_room_image"
+                android:layout_width="@dimen/item_style_room_image_height"
+                android:layout_height="@dimen/item_style_room_image_height"
+                android:layout_margin="@dimen/item_space_room_img_margin" />
+
+            <TextView
+                style="@style/title_13_black_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_space_room_img_margin"
+                android:layout_marginBottom="@dimen/item_space_room_img_margin"
+                android:text="Share room" />
+
+            <TextView
+                style="@style/title_13_silver_black_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_space_room_img_margin"
+                android:layout_marginRight="@dimen/item_space_room_img_margin"
+                android:maxLines="4"
+                android:text="you will seating with other team in the big room" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/item_space_room_img_margin"
+                style="@style/title_12_blue_cost"
+                android:text="200.00 VND/ hour/ 1 person"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

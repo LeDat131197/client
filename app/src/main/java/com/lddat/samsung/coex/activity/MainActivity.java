@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         checkLocationPermission();
         setupBottomNavigationBar();
-        
+        loadFragment(new HomeFragment());
     }
 
     private void loadFragment(Fragment fragment) {

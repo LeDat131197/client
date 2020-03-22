@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.lddat.samsung.coex.R;
 
-public class SpaceListActivity extends AppCompatActivity {
+public class BookingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_space_list);
+        setContentView(R.layout.activity_booking);
     }
 }

@@ -7,26 +7,28 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/fragment_home_cardview_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/fragment_home_btn_spacelist_height"
+        android:layout_height="@dimen/fragment_home_btn_spacelist_height"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="30dp">
+        android:layout_marginTop="@dimen/fragment_home_btn_spacelist_margin"
+        android:layout_marginRight="@dimen/fragment_home_btn_spacelist_margin">
 
-        <ImageView
-            android:id="@+id/fragment_home_btn_list"
-            android:layout_width="30dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/ic_home" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fragment_home_btn_list"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_home" />
+        </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/fragment_home_btn_spacelist_height"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="15dp"
@@ -39,4 +41,14 @@
 
             android:imeOptions="actionSearch" />
     </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/fragment_home_layout_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/text_margin_left">
+
+        <include layout="@layout/item_coex_detail" />
+    </RelativeLayout>
 </RelativeLayout>
